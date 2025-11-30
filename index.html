@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <div class="logo">Mon Portfolio</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="nav-link active" onclick="showPage('accueil')">Accueil</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('apropos')">À propos</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('services')">Services</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="accueil" class="page active">
+        <div class="hero" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200')">
+            <div class="hero-content">
+                <h1>Bienvenue sur mon Portfolio</h1>
+                <p>Découvrez mes projets et réalisations créatives</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h2>Créativité & Innovation</h2>
+            <p>Je crée des expériences digitales uniques qui allient design moderne et performances techniques.</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Design Créatif</h3>
+                <p>Des interfaces élégantes et intuitives qui captivent vos utilisateurs.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Performance</h3>
+                <p>Des sites ultra-rapides et optimisés pour la meilleure expérience.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>Responsive</h3>
+                <p>Designs adaptés à tous les écrans pour une expérience parfaite.</p>
+            </div>
+        </div>
+
+        <div class="image-text-section">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" alt="Workspace">
+            <div class="text-content">
+                <h2>Mon Approche</h2>
+                <p>Chaque projet est unique et mérite une attention particulière.</p>
+                <p>Mon processus créatif combine recherche approfondie et prototypage rapide.</p>
+                <p>Ensemble, nous créerons quelque chose d'extraordinaire.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="apropos" class="page">
+        <div class="about-header">
+            <h1>À Propos de Moi</h1>
+            <p>Passionné par le design et la technologie</p>
+        </div>
+
+        <div class="about-content">
+            <h2>Mon Parcours</h2>
+            <p>Depuis plus de 5 ans, je mets mon expertise au service de projets digitaux innovants.</p>
+
+            <h2>Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Web Design</h3>
+                    <p>UI/UX, Figma, Adobe XD</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Développement</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Créativité</h3>
+                    <p>Branding, Illustration</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Marketing</h3>
+                    <p>SEO, Analytics, Stratégie</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="page">
+        <div class="services-header">
+            <h1>Mes Services</h1>
+            <p>Des solutions adaptées à vos besoins</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🎨 Design Web</h3>
+                <p>Création de maquettes et d'interfaces utilisateur modernes.</p>
+                <p class="service-price">À partir de 800€</p>
+            </div>
+            <div class="service-card">
+                <h3>💻 Développement Site Web</h3>
+                <p>Développement de sites web sur mesure et optimisés.</p>
+                <p class="service-price">À partir de 1500€</p>
+            </div>
+            <div class="service-card">
+                <h3>📱 Application Mobile</h3>
+                <p>Conception et développement d'applications mobiles.</p>
+                <p class="service-price">À partir de 3000€</p>
+            </div>
+            <div class="service-card">
+                <h3>🔍 SEO & Marketing</h3>
+                <p>Optimisation de votre visibilité en ligne.</p>
+                <p class="service-price">À partir de 500€/mois</p>
+            </div>
+            <div class="service-card">
+                <h3>🎯 Branding</h3>
+                <p>Création d'identité visuelle complète.</p>
+                <p class="service-price">À partir de 1200€</p>
+            </div>
+            <div class="service-card">
+                <h3>⚡ Maintenance</h3>
+                <p>Support technique et mises à jour régulières.</p>
+                <p class="service-price">À partir de 300€/mois</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="contact-header">
+            <h1>Contactez-Moi</h1>
+            <p>Discutons de votre projet</p>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="jean.dupont@exemple.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Sujet *</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Demande de devis">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Décrivez votre projet..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Envoyer le message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Informations de Contact</h3>
+                <p>📧 Email : contact@monportfolio.com</p>
+                <p>📱 Téléphone : +33 6 12 34 56 78</p>
+                <p>📍 Localisation : Paris, France</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mon Portfolio - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
