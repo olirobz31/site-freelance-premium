@@ -464,3 +464,71 @@ footer {
         font-size: 18px;
     }
 }
+
+/* Section Mes Produits */
+.products-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.products-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.products-section > p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.product-card {
+    background: white;
+    color: #333;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.product-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+.product-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.product-price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #667eea;
+    margin: 20px 0;
+}
+
+.product-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
