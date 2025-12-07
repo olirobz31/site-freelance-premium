@@ -212,7 +212,9 @@
             </div>
 
             <section class="contact-container">
-                <form class="contact-form" onsubmit="handleSubmit(event)">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="9a01e0ea-0cc2-487d-8e01-f760a34845cf">
+    <input type="hidden" name="redirect" value="https://olirobz31.github.io/site-freelance-premium/">
                     <div class="form-group">
                         <label for="name">Nom complet *</label>
                         <input type="text" id="name" name="name" required placeholder="Jean Dupont">
