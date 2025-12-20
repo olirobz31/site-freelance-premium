@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Portfolio - Mes Projets Web | Olive - Développeur Freelance</title>
+    <meta name="description" content="Découvrez mes projets : LegaleAI (SaaS IA), Dashboard Analytics Pro, site pisciniste professionnel, blog Végétalicious. Exemples concrets de développement web.">
+    <meta name="keywords" content="portfolio développeur web, projets SaaS, réalisations web, LegaleAI, dashboard analytics, développement freelance">
+    <meta name="author" content="Olive - Développeur Web Freelance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://olirobz31.github.io/site-freelance-premium/portfolio.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfolio - Mes Projets Web | Olive">
+    <meta property="og:description" content="Découvrez mes réalisations : SaaS, dashboards, sites professionnels et plus encore.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://olirobz31.github.io/site-freelance-premium/portfolio.html">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - Mes Projets Web">
+    <meta name="twitter:description" content="Découvrez mes réalisations en développement web">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Portfolio de Olive - Développeur Web",
+        "description": "Collection des projets web réalisés par Olive",
+        "url": "https://olirobz31.github.io/site-freelance-premium/portfolio.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "CreativeWork",
+                    "position": 1,
+                    "name": "LegaleAI",
+                    "description": "SaaS de génération de documents légaux français avec IA"
+                },
+                {
+                    "@type": "CreativeWork",
+                    "position": 2,
+                    "name": "Site Professionnel Pisciniste",
+                    "description": "Site web professionnel avec SEO local"
+                },
+                {
+                    "@type": "CreativeWork",
+                    "position": 3,
+                    "name": "Dashboard Analytics Pro",
+                    "description": "Tableau de bord d'analyse de données"
+                },
+                {
+                    "@type": "CreativeWork",
+                    "position": 4,
+                    "name": "Végétalicious",
+                    "description": "Blog culinaire végétarien"
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <div class="logo">Olive | Dev Web</div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="portfolio-header">
+            <h1>Portfolio</h1>
+            <p>Mes réalisations récentes en développement web</p>
+        </div>
+
+        <section class="portfolio-grid">
+            <!-- Projet 1 : LegaleAI -->
+            <article class="project-card featured" itemscope itemtype="https://schema.org/SoftwareApplication">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800" alt="Screenshot LegaleAI - SaaS de génération de documents légaux" loading="lazy" itemprop="image">
+                    <div class="project-badge">SaaS</div>
+                </div>
+                <div class="project-content">
+                    <h2 itemprop="name">LegaleAI</h2>
+                    <p class="project-tagline" itemprop="description">SaaS de génération de documents légaux français propulsé par IA</p>
+                    <p itemprop="about">Application complète permettant de générer automatiquement des documents juridiques (contrats, CGV, mentions légales) grâce à l'intelligence artificielle. Système de paiement intégré et architecture serverless.</p>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Vercel Functions</span>
+                        <span class="tech-tag">Claude API</span>
+                        <span class="tech-tag">Lemonsqueezy</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SEO</span>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h3>Fonctionnalités clés :</h3>
+                        <ul>
+                            <li>✅ Intégration API Anthropic Claude pour génération IA</li>
+                            <li>✅ Système de paiement Lemonsqueezy</li>
+                            <li>✅ Architecture serverless (Vercel)</li>
+                            <li>✅ Optimisation SEO complète</li>
+                            <li>✅ Interface utilisateur intuitive</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://legaleai.fr" class="project-btn primary" target="_blank" rel="noopener" itemprop="url">Voir le site</a>
+                        <span class="project-status">🟢 En production</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projet 2 : Site Pisciniste -->
+            <article class="project-card" itemscope itemtype="https://schema.org/WebSite">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800" alt="Site web professionnel pisciniste Cajarc" loading="lazy" itemprop="image">
+                    <div class="project-badge">Client</div>
+                </div>
+                <div class="project-content">
+                    <h2 itemprop="name">Site Professionnel Pisciniste</h2>
+                    <p class="project-tagline" itemprop="description">Site vitrine avec SEO local pour entreprise de piscines</p>
+                    <p itemprop="about">Site web professionnel développé pour une entreprise d'entretien et construction de piscines. Optimisé pour le référencement local avec intégration Google Maps et formulaire de contact avancé.</p>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">SEO Local</span>
+                        <span class="tech-tag">Google Maps</span>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h3>Points forts :</h3>
+                        <ul>
+                            <li>✅ SEO local optimisé (région Cajarc)</li>
+                            <li>✅ Intégration Google Maps interactive</li>
+                            <li>✅ Navigation sticky responsive</li>
+                            <li>✅ Formulaire de contact PHPMailer</li>
+                            <li>✅ Design moderne et professionnel</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links">
+                        <span class="project-status">🟢 Déployé</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projet 3 : Dashboard Analytics Pro -->
+            <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Dashboard Analytics Pro - Tableau de bord analytique" loading="lazy" itemprop="image">
+                    <div class="project-badge">Outil</div>
+                </div>
+                <div class="project-content">
+                    <h2 itemprop="name">Dashboard Analytics Pro</h2>
+                    <p class="project-tagline" itemprop="description">Tableau de bord d'analyse de données avancé</p>
+                    <p itemprop="about">Outil premium d'analyse et de visualisation de données. Interface intuitive avec graphiques interactifs, rapports personnalisables et exports de données.</p>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Data Viz</span>
+                        <span class="tech-tag">API REST</span>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h3>Fonctionnalités :</h3>
+                        <ul>
+                            <li>✅ Visualisation de données en temps réel</li>
+                            <li>✅ Graphiques interactifs personnalisables</li>
+                            <li>✅ Exports PDF et CSV</li>
+                            <li>✅ Interface responsive et moderne</li>
+                            <li>✅ Gestion multi-utilisateurs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links">
+                        <span class="project-status">🟢 Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projet 4 : Végétalicious -->
+            <article class="project-card" itemscope itemtype="https://schema.org/Blog">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800" alt="Blog Végétalicious - Recettes végétariennes" loading="lazy" itemprop="image">
+                    <div class="project-badge">Blog</div>
+                </div>
+                <div class="project-content">
+                    <h2 itemprop="name">Végétalicious</h2>
+                    <p class="project-tagline" itemprop="description">Blog culinaire végétarien et végan</p>
+                    <p itemprop="about">Blog spécialisé dans les recettes végétariennes et véganes. Migration complète de Wix vers GitHub Pages avec optimisation SEO, formulaire de contact fonctionnel et design moderne.</p>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">GitHub Pages</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Web3Forms</span>
+                        <span class="tech-tag">SEO</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h3>Réalisations :</h3>
+                        <ul>
+                            <li>✅ Migration Wix → GitHub Pages</li>
+                            <li>✅ Optimisation SEO complète</li>
+                            <li>✅ Formulaire de contact Web3Forms</li>
+                            <li>✅ Design responsive moderne</li>
+                            <li>✅ Performance et vitesse optimales</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://vegetalicious.fr" class="project-btn primary" target="_blank" rel="noopener" itemprop="url">Visiter le blog</a>
+                        <span class="project-status">🟢 En ligne</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="portfolio-cta">
+            <h2>Intéressé par ces réalisations ?</h2>
+            <p>Je peux créer une solution similaire adaptée à vos besoins</p>
+            <a href="contact.html" class="cta-button">Discutons de votre projet</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Olive</h4>
+                <p>Développeur Web Freelance</p>
+                <p>Création de SaaS et sites professionnels</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📧 olirobz31@gmail.com</p>
+                <p>📱 +33 6 27 61 07 51</p>
+                <p>📍 Toulouse, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Olive - Développeur Web Freelance - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mes Services - Développement Web & SaaS | Olive Freelance</title>
+    <meta name="description" content="Services de développement web : création SaaS, sites professionnels, dashboards, SEO, intégrations API, maintenance. Devis gratuit. Basé à Toulouse.">
+    <meta name="keywords" content="développement SaaS, création site web, dashboard analytics, optimisation SEO, intégration API, développeur freelance Toulouse">
+    <meta name="author" content="Olive - Développeur Web Freelance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://olirobz31.github.io/site-freelance-premium/services.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mes Services - Développement Web & SaaS">
+    <meta property="og:description" content="Services de développement web professionnel. SaaS, sites web, dashboards et plus.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://olirobz31.github.io/site-freelance-premium/services.html">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mes Services - Développement Web">
+    <meta name="twitter:description" content="Services de développement web professionnel">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Développement Web Freelance",
+        "provider": {
+            "@type": "Person",
+            "name": "Olive",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Toulouse",
+                "addressCountry": "FR"
+            }
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "France"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services de développement web",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Développement SaaS Complet"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Site Web Professionnel",
+                        "price": "800",
+                        "priceCurrency": "EUR"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dashboard & Outils Web",
+                        "price": "1200",
+                        "priceCurrency": "EUR"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <div class="logo">Olive | Dev Web</div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="services-header">
+            <h1>Mes Services</h1>
+            <p>Des solutions web sur mesure pour votre activité</p>
+        </div>
+
+        <section class="services-grid">
+            <article class="service-card">
+                <div class="service-icon">🚀</div>
+                <h2>Développement SaaS Complet</h2>
+                <p>Création d'applications web complètes de A à Z : architecture, backend, frontend, paiements et déploiement.</p>
+                <ul class="service-includes">
+                    <li>Architecture serverless (Vercel, Netlify)</li>
+                    <li>Intégration API (Claude, Stripe, etc.)</li>
+                    <li>Système de paiement (Stripe, Lemonsqueezy)</li>
+                    <li>Dashboard utilisateur complet</li>
+                    <li>Base de données et sécurité</li>
+                    <li>Optimisation SEO incluse</li>
+                </ul>
+                <p class="service-price">Sur devis</p>
+                <a href="contact.html" class="service-cta">Demander un devis</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">💼</div>
+                <h2>Site Web Professionnel</h2>
+                <p>Sites vitrines optimisés pour convertir vos visiteurs en clients. Design moderne et référencement inclus.</p>
+                <ul class="service-includes">
+                    <li>Design responsive premium</li>
+                    <li>Formulaire de contact avancé</li>
+                    <li>SEO on-page optimisé</li>
+                    <li>Google Maps & Analytics</li>
+                    <li>Hébergement conseils inclus</li>
+                    <li>Formation à la gestion du site</li>
+                </ul>
+                <p class="service-price">À partir de 800€</p>
+                <a href="contact.html" class="service-cta">Me contacter</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">📊</div>
+                <h2>Dashboard & Outils Web</h2>
+                <p>Création d'outils web sur mesure : dashboards analytics, CRM personnalisés, outils de gestion.</p>
+                <ul class="service-includes">
+                    <li>Visualisation de données (Chart.js)</li>
+                    <li>Interface intuitive et moderne</li>
+                    <li>Exports PDF/CSV automatisés</li>
+                    <li>API REST pour intégrations</li>
+                    <li>Gestion multi-utilisateurs</li>
+                    <li>Documentation complète</li>
+                </ul>
+                <p class="service-price">À partir de 1200€</p>
+                <a href="contact.html" class="service-cta">Discuter du projet</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🔍</div>
+                <h2>Optimisation SEO</h2>
+                <p>Audit et optimisation complète de votre site pour améliorer votre visibilité sur Google.</p>
+                <ul class="service-includes">
+                    <li>Audit SEO technique complet</li>
+                    <li>Optimisation on-page (balises, contenu)</li>
+                    <li>Schema.org & Rich Snippets</li>
+                    <li>SEO local (Google My Business)</li>
+                    <li>Amélioration vitesse de chargement</li>
+                    <li>Suivi Google Search Console</li>
+                </ul>
+                <p class="service-price">À partir de 400€</p>
+                <a href="contact.html" class="service-cta">Obtenir un audit</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🔌</div>
+                <h2>Intégration API & Automatisation</h2>
+                <p>Connexion de vos outils et automatisation de vos processus métier.</p>
+                <ul class="service-includes">
+                    <li>Intégration API tierces (Stripe, Claude, etc.)</li>
+                    <li>Webhooks & automatisations</li>
+                    <li>Synchronisation de données</li>
+                    <li>Tests et validation complète</li>
+                    <li>Documentation technique détaillée</li>
+                    <li>Support post-intégration</li>
+                </ul>
+                <p class="service-price">À partir de 600€</p>
+                <a href="contact.html" class="service-cta">Démarrer</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">⚡</div>
+                <h2>Maintenance & Support</h2>
+                <p>Maintenance technique, mises à jour de sécurité et support réactif pour vos projets web.</p>
+                <ul class="service-includes">
+                    <li>Mises à jour régulières (sécurité, contenu)</li>
+                    <li>Monitoring & sauvegardes automatiques</li>
+                    <li>Support technique prioritaire</li>
+                    <li>Corrections de bugs rapides</li>
+                    <li>Rapport mensuel d'activité</li>
+                    <li>Conseils d'amélioration continue</li>
+                </ul>
+                <p class="service-price">À partir de 250€/mois</p>
+                <a href="contact.html" class="service-cta">S'abonner</a>
+            </article>
+        </section>
+
+        <section class="services-process">
+            <h2>Mon Processus de Travail</h2>
+            <p>Une méthode éprouvée pour des résultats garantis</p>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Analyse</h3>
+                    <p>Discussion approfondie de vos besoins, objectifs et contraintes. Étude de faisabilité technique.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Proposition</h3>
+                    <p>Devis détaillé avec planning, fonctionnalités précises et recommandations techniques.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Développement</h3>
+                    <p>Création de votre solution avec points réguliers et possibilité d'ajustements en cours de route.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Livraison</h3>
+                    <p>Tests complets, déploiement en production, formation et documentation complète.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-me-section">
+            <h2>Pourquoi Travailler Avec Moi ?</h2>
+            <div class="why-me-grid">
+                <div class="why-me-item">
+                    <span class="why-icon">✅</span>
+                    <h3>Projets en Production</h3>
+                    <p>Mes réalisations sont déployées et utilisées par de vrais clients. Pas de simple portfolio théorique.</p>
+                </div>
+                <div class="why-me-item">
+                    <span class="why-icon">🎯</span>
+                    <h3>Expertise Technique</h3>
+                    <p>Maîtrise complète de la stack moderne : frontend, backend, API, SEO, déploiement.</p>
+                </div>
+                <div class="why-me-item">
+                    <span class="why-icon">💡</span>
+                    <h3>Technologies Modernes</h3>
+                    <p>Utilisation des dernières technologies (IA, serverless) pour des solutions innovantes.</p>
+                </div>
+                <div class="why-me-item">
+                    <span class="why-icon">🤝</span>
+                    <h3>Communication Claire</h3>
+                    <p>Points réguliers, transparence totale sur l'avancement et les éventuels obstacles.</p>
+                </div>
+                <div class="why-me-item">
+                    <span class="why-icon">⚡</span>
+                    <h3>Réactivité</h3>
+                    <p>Réponse sous 24h et disponibilité pour les urgences de mes clients en contrat.</p>
+                </div>
+                <div class="why-me-item">
+                    <span class="why-icon">📈</span>
+                    <h3>Orienté ROI</h3>
+                    <p>Focus sur les fonctionnalités qui apportent de la valeur, pas sur la sur-ingénierie.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Quels sont vos délais de réalisation ?</h3>
+                    <p>Cela dépend du projet. Un site vitrine prend généralement 2-3 semaines, un SaaS complet 2-3 mois. Je fournis un planning détaillé dans chaque devis.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Proposez-vous des paiements échelonnés ?</h3>
+                    <p>Oui, pour les projets > 1500€, je propose un échelonnement : 30% au démarrage, 40% à mi-parcours, 30% à la livraison.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Travaillez-vous avec des clients hors Toulouse ?</h3>
+                    <p>Absolument ! Je travaille à distance avec des clients dans toute la France. Visioconférences pour les points projet.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Que se passe-t-il après la livraison ?</h3>
+                    <p>Formation complète à l'utilisation, documentation fournie, et 1 mois de support gratuit. Puis maintenance optionnelle.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-cta">
+            <h2>Prêt à démarrer votre projet ?</h2>
+            <p>Contactez-moi pour un devis personnalisé gratuit et sans engagement</p>
+            <a href="contact.html" class="cta-button">Demander un devis gratuit</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Olive</h4>
+                <p>Développeur Web Freelance</p>
+                <p>Création de SaaS et sites professionnels</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📧 olirobz31@gmail.com</p>
+                <p>📱 +33 6 27 61 07 51</p>
+                <p>📍 Toulouse, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Olive - Développeur Web Freelance - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

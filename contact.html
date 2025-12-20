@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Contact - Devis Gratuit | Olive - Développeur Web Freelance</title>
+    <meta name="description" content="Contactez-moi pour un devis gratuit. Développeur web freelance à Toulouse. Email, téléphone, formulaire de contact. Réponse sous 24h garantie.">
+    <meta name="keywords" content="contact développeur web, devis gratuit, freelance Toulouse, demande projet web">
+    <meta name="author" content="Olive - Développeur Web Freelance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://olirobz31.github.io/site-freelance-premium/contact.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact - Devis Gratuit | Olive">
+    <meta property="og:description" content="Contactez-moi pour discuter de votre projet web. Réponse rapide garantie.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://olirobz31.github.io/site-freelance-premium/contact.html">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact - Devis Gratuit">
+    <meta name="twitter:description" content="Contactez-moi pour votre projet web">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Olive",
+            "jobTitle": "Développeur Web Freelance",
+            "email": "olirobz31@gmail.com",
+            "telephone": "+33627610751",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Toulouse",
+                "addressCountry": "FR"
+            }
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <div class="logo">Olive | Dev Web</div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="contact-header">
+            <h1>Contactez-Moi</h1>
+            <p>Discutons de votre projet web</p>
+        </div>
+
+        <section class="contact-container">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="9a01e0ea-0cc2-487d-8e01-f760a34845cf">
+                <input type="hidden" name="redirect" value="https://olirobz31.github.io/site-freelance-premium/merci.html">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="jean.dupont@exemple.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="06 27 61 07 51">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Type de projet *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choisissez un type de projet</option>
+                        <option value="Développement SaaS">Développement SaaS</option>
+                        <option value="Site web professionnel">Site web professionnel</option>
+                        <option value="Dashboard / Outil web">Dashboard / Outil web</option>
+                        <option value="Optimisation SEO">Optimisation SEO</option>
+                        <option value="Intégration API">Intégration API</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget estimé</label>
+                    <select id="budget" name="budget">
+                        <option value="">Sélectionnez une fourchette</option>
+                        <option value="< 1000€">Moins de 1000€</option>
+                        <option value="1000€ - 2500€">1000€ - 2500€</option>
+                        <option value="2500€ - 5000€">2500€ - 5000€</option>
+                        <option value="5000€ - 10000€">5000€ - 10000€</option>
+                        <option value="> 10000€">Plus de 10000€</option>
+                        <option value="À définir">À définir ensemble</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Décrivez votre projet *</label>
+                    <textarea id="message" name="message" required placeholder="Décrivez votre projet, vos objectifs, votre timeline et toute information utile..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Envoyer ma demande</button>
+                
+                <p class="form-note">* Champs obligatoires. Vos données sont confidentielles et ne seront jamais partagées.</p>
+            </form>
+
+            <div class="contact-info">
+                <h2>Informations de Contact</h2>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:olirobz31@gmail.com">olirobz31@gmail.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div>
+                        <strong>Téléphone</strong>
+                        <p><a href="tel:+33627610751">+33 6 27 61 07 51</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong>Localisation</strong>
+                        <p>Toulouse, France</p>
+                        <p class="text-small">Disponible pour projets à distance</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">💼</span>
+                    <div>
+                        <strong>GitHub</strong>
+                        <p><a href="https://github.com/olirobz31" target="_blank" rel="noopener">github.com/olirobz31</a></p>
+                    </div>
+                </div>
+
+                <div class="availability">
+                    <h3>Disponibilité</h3>
+                    <p>✅ Actuellement disponible pour nouveaux projets</p>
+                    <p><strong>Délai de réponse :</strong> Sous 24h (jours ouvrés)</p>
+                    <p><strong>Meilleurs horaires :</strong> Lun-Ven 9h-18h</p>
+                </div>
+
+                <div class="social-links">
+                    <h3>Restons Connectés</h3>
+                    <p>Suivez mes actualités et projets :</p>
+                    <div class="social-buttons">
+                        <a href="https://github.com/olirobz31" target="_blank" rel="noopener" class="social-btn">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-alternatives">
+            <h2>Autres Façons de Me Contacter</h2>
+            <div class="alternatives-grid">
+                <div class="alternative-item">
+                    <h3>📞 Appel Direct</h3>
+                    <p>Préférez discuter de vive voix ? Appelez-moi directement au <strong>06 27 61 07 51</strong></p>
+                </div>
+                <div class="alternative-item">
+                    <h3>📧 Email Direct</h3>
+                    <p>Pour une question rapide, envoyez-moi un email à <strong>olirobz31@gmail.com</strong></p>
+                </div>
+                <div class="alternative-item">
+                    <h3>💬 Message Rapide</h3>
+                    <p>Remplissez le formulaire ci-dessus pour une réponse sous 24h avec un premier devis estimatif</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-happens-next">
+            <h2>Et Après Votre Message ?</h2>
+            <div class="next-steps">
+                <div class="next-step">
+                    <div class="step-icon">📨</div>
+                    <h3>1. Accusé de réception</h3>
+                    <p>Vous recevez un email automatique confirmant la réception de votre demande</p>
+                </div>
+                <div class="next-step">
+                    <div class="step-icon">📞</div>
+                    <h3>2. Premier contact (24h)</h3>
+                    <p>Je vous réponds sous 24h pour clarifier vos besoins et fixer un échange</p>
+                </div>
+                <div class="next-step">
+                    <div class="step-icon">💡</div>
+                    <h3>3. Discussion approfondie</h3>
+                    <p>Échange détaillé sur votre projet, vos objectifs et contraintes</p>
+                </div>
+                <div class="next-step">
+                    <div class="step-icon">📋</div>
+                    <h3>4. Devis personnalisé</h3>
+                    <p>Proposition détaillée avec planning, tarifs et recommandations techniques</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Olive</h4>
+                <p>Développeur Web Freelance</p>
+                <p>Création de SaaS et sites professionnels</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📧 olirobz31@gmail.com</p>
+                <p>📱 +33 6 27 61 07 51</p>
+                <p>📍 Toulouse, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Olive - Développeur Web Freelance - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
