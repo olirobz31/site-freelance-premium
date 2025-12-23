@@ -1591,3 +1591,166 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ===== STYLES POUR PAGES LÉGALES ===== */
+
+.legal-header {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.legal-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal-header p {
+    font-size: 1.125rem;
+    opacity: 0.95;
+}
+
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.legal-intro {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.legal-intro p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.legal-section {
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+}
+
+.legal-section h2 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.legal-section h3 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
+}
+
+.legal-section p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.legal-section strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.legal-section ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    list-style-type: disc;
+}
+
+.legal-section li {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.legal-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.legal-section a:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+.legal-update {
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 12px;
+    margin-top: 3rem;
+}
+
+.legal-update p {
+    color: var(--text-light);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-header h1 {
+        font-size: 2rem;
+    }
+    
+    .legal-section {
+        padding: 1.5rem;
+    }
+    
+    .legal-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ===== CHECKBOX RGPD ===== */
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-top: 0.25rem;
+    cursor: pointer;
+    width: auto;
+    min-width: 18px;
+    height: 18px;
+}
+
+.checkbox-label span {
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.checkbox-label a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.checkbox-label a:hover {
+    color: var(--primary-dark);
+}

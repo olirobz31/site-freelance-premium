@@ -256,4 +256,4 @@ Tu as maintenant un site **ultra-professionnel** avec :
 - Juste personnaliser les images et URLs
 - Tout le SEO est déjà optimisé
 
-**Bon lancement Olive ! 💪**
+**Bon lancement Olivier ! 💪**
