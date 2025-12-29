@@ -1754,3 +1754,17 @@ footer {
 .checkbox-label a:hover {
     color: var(--primary-dark);
 }
+
+
+/* ===== BOUTON SECONDAIRE (pour liens Gumroad/Lemonsqueezy) ===== */
+.project-btn.secondary {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.project-btn.secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
