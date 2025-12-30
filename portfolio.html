@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>💼 Portfolio - Mes Projets Web | Olivier - Développeur Freelance</title>
+    <title>Portfolio - Mes Projets Web | Olive - Développeur Freelance</title>
     <meta name="description" content="Découvrez mes projets : LegaleAI (SaaS IA), Dashboard Analytics Pro, site pisciniste professionnel, blog Végétalicious. Exemples concrets de développement web.">
     <meta name="keywords" content="portfolio développeur web, projets SaaS, réalisations web, LegaleAI, dashboard analytics, développement freelance">
-    <meta name="author" content="Olivier - Développeur Web Freelance">
+    <meta name="author" content="Olive - Développeur Web Freelance">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://olirobz31.github.io/site-freelance-premium/portfolio.html">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Portfolio - Mes Projets Web | Olivier">
+    <meta property="og:title" content="Portfolio - Mes Projets Web | Olive">
     <meta property="og:description" content="Découvrez mes réalisations : SaaS, dashboards, sites professionnels et plus encore.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://olirobz31.github.io/site-freelance-premium/portfolio.html">
@@ -29,8 +29,8 @@
     {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Portfolio de Olivier - Développeur Web",
-        "description": "Collection des projets web réalisés par Olivier",
+        "name": "Portfolio de Olive - Développeur Web",
+        "description": "Collection des projets web réalisés par Olive",
         "url": "https://olirobz31.github.io/site-freelance-premium/portfolio.html",
         "mainEntity": {
             "@type": "ItemList",
@@ -38,24 +38,48 @@
                 {
                     "@type": "CreativeWork",
                     "position": 1,
+                    "name": "La Belle Époque",
+                    "description": "Site restaurant gastronomique avec réservation"
+                },
+                {
+                    "@type": "CreativeWork",
+                    "position": 2,
                     "name": "LegaleAI",
                     "description": "SaaS de génération de documents légaux français avec IA"
                 },
                 {
                     "@type": "CreativeWork",
-                    "position": 2,
+                    "position": 3,
+                    "name": "CovoitApp",
+                    "description": "Application mobile de covoiturage"
+                },
+                {
+                    "@type": "CreativeWork",
+                    "position": 4,
                     "name": "Site Professionnel Pisciniste",
                     "description": "Site web professionnel avec SEO local"
                 },
                 {
                     "@type": "CreativeWork",
-                    "position": 3,
+                    "position": 5,
                     "name": "Dashboard Analytics Pro",
                     "description": "Tableau de bord d'analyse de données"
                 },
                 {
                     "@type": "CreativeWork",
-                    "position": 4,
+                    "position": 6,
+                    "name": "Template Portfolio Créatif",
+                    "description": "Template portfolio premium"
+                },
+                {
+                    "@type": "CreativeWork",
+                    "position": 7,
+                    "name": "Formulaire Devis Premium",
+                    "description": "Template formulaire multi-étapes"
+                },
+                {
+                    "@type": "CreativeWork",
+                    "position": 8,
                     "name": "Végétalicious",
                     "description": "Blog culinaire végétarien"
                 }
@@ -69,7 +93,7 @@
 <body>
     <nav>
         <div class="menu-container">
-            <div class="logo">Olivier | Dev Web</div>
+            <div class="logo">Olive | Dev Web</div>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
@@ -87,10 +111,9 @@
             <p>Mes réalisations récentes en développement web</p>
         </div>
 
-
-             <div class="portfolio-projects">
+        <section class="portfolio-grid">
             <!-- Projet 1 : La Belle Époque -->
-            <article class="project-card featured" itemscope itemtype="https://schema.org/WebSite">
+            <article class="project-card" itemscope itemtype="https://schema.org/WebSite">
                 <div class="project-image">
                     <img src="images/site-restaurant.png" alt="La Belle Époque - Site Restaurant Gastronomique" loading="lazy" itemprop="image">
                     <div class="project-badge">Client Premium</div>
@@ -128,11 +151,7 @@
             </article>
 
             <!-- Projet 2 : LegaleAI -->
-
-
-        <section class="portfolio-grid">
-            <!-- Projet 1 : LegaleAI -->
-            <article class="project-card featured" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
                 <div class="project-image">
                     <img src="images/legaleai.png" alt="Screenshot LegaleAI - SaaS de génération de documents légaux" loading="lazy" itemprop="image">
                     <div class="project-badge">SaaS</div>
@@ -162,14 +181,14 @@
                     </div>
                     
                     <div class="project-links">
-<a href="https://legaleai.vercel.app/" class="project-btn primary" target="_blank" rel="noopener" itemprop="url">Voir le site</a>                        <span class="project-status">🟢 Disponible</span>
+                        <a href="https://legaleai.vercel.app/" class="project-btn primary" target="_blank" rel="noopener" itemprop="url">Voir le site</a>
+                        <span class="project-status">🟢 Disponible</span>
                     </div>
                 </div>
             </article>
-            
 
             <!-- Projet 3 : CovoitApp -->
-            <article class="project-card featured" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
                 <div class="project-image">
                     <img src="images/covoitapp.png" alt="CovoitApp - Application de covoiturage" loading="lazy" itemprop="image">
                     <div class="project-badge">App Mobile</div>
@@ -207,7 +226,6 @@
                 </div>
             </article>
 
-
             <!-- Projet 4 : Site Pisciniste -->
             <article class="project-card" itemscope itemtype="https://schema.org/WebSite">
                 <div class="project-image">
@@ -239,9 +257,9 @@
                     </div>
                     
                     <div class="project-links">
-    <a href="https://olirobz31.github.io/site-pisciniste/" class="project-btn primary" target="_blank" rel="noopener">Voir le site</a>
-    <span class="project-status">🟢 Déployé</span>
-</div>
+                        <a href="https://olirobz31.github.io/site-pisciniste/" class="project-btn primary" target="_blank" rel="noopener">Voir le site</a>
+                        <span class="project-status">🟢 Déployé</span>
+                    </div>
                 </div>
             </article>
 
@@ -276,13 +294,11 @@
                     </div>
                     
                     <div class="project-links">
-    <a href="https://olirobz31.github.io/dashboard-analytics-pro/landing.html" class="project-btn primary" target="_blank" rel="noopener">Page de vente</a>
-    <a href="https://olirobz.gumroad.com/l/dashboard-analytics-pro" class="project-btn secondary" target="_blank" rel="noopener">Acheter (79€)</a>
-    <span class="project-status">🟢 Disponible</span>
-</div>
+                        <a href="https://olirobz31.github.io/dashboard-analytics-pro/landing.html" class="project-btn primary" target="_blank" rel="noopener">Page de vente</a>
+                        <a href="https://olirobz.gumroad.com/l/dashboard-analytics-pro" class="project-btn secondary" target="_blank" rel="noopener">Acheter (79€)</a>
+                        <span class="project-status">🟢 Disponible</span>
+                    </div>
                 </div>
-            </article>
-
             </article>
 
             <!-- Projet 6 : Template Portfolio Créatif -->
@@ -323,8 +339,6 @@
                 </div>
             </article>
 
-
-
             <!-- Projet 7 : Formulaire Devis Premium -->
             <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
                 <div class="project-image">
@@ -364,7 +378,6 @@
                 </div>
             </article>
 
-
             <!-- Projet 8 : Végétalicious -->
             <article class="project-card" itemscope itemtype="https://schema.org/Blog">
                 <div class="project-image">
@@ -396,7 +409,8 @@
                     </div>
                     
                     <div class="project-links">
-<a href="https://olirobz31.github.io/blog-vegan/" class="project-btn primary" target="_blank" rel="noopener" itemprop="url">Visiter le blog</a>                        <span class="project-status">🟢 En ligne</span>
+                        <a href="https://olirobz31.github.io/blog-vegan/" class="project-btn primary" target="_blank" rel="noopener" itemprop="url">Visiter le blog</a>
+                        <span class="project-status">🟢 En ligne</span>
                     </div>
                 </div>
             </article>
@@ -412,7 +426,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Olivier</h4>
+                <h4>Olive</h4>
                 <p>Développeur Web Freelance</p>
                 <p>Création de SaaS et sites professionnels</p>
             </div>
@@ -427,13 +441,13 @@
                 </ul>
             </div>
             <div class="footer-section">
-    <h4>Légal</h4>
-    <ul>
-        <li><a href="mentions-legales.html">Mentions légales</a></li>
-        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
-        <li><a href="cgv.html">CGV</a></li>
-    </ul>
-</div>
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="cgv.html">CGV</a></li>
+                </ul>
+            </div>
             <div class="footer-section">
                 <h4>Contact</h4>
                 <p>📧 olirobz31@gmail.com</p>
@@ -442,7 +456,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Olivier - Développeur Web Freelance - Tous droits réservés</p>
+            <p>&copy; 2024 Olive - Développeur Web Freelance - Tous droits réservés</p>
         </div>
     </footer>
 
