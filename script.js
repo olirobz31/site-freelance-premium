@@ -4,6 +4,38 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
 }
 
+// Toggle theme clair/sombre
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+
+    updateThemeIcon(newTheme);
+}
+
+function updateThemeIcon(theme) {
+    const themeIcon = document.querySelector('.theme-icon');
+    if (themeIcon) {
+        themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+}
+
+// Charger le thème sauvegardé au chargement de la page
+function loadSavedTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+}
+
+// Charger le thème immédiatement
+(function() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+})();
+
 // Fermer le menu si on clique en dehors
 document.addEventListener('click', function(event) {
     const nav = document.querySelector('nav');
@@ -32,6 +64,9 @@ const observer = new IntersectionObserver(function(entries) {
 
 // Observer les cartes au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
+    // Charger le thème et mettre à jour l'icône
+    loadSavedTheme();
+
     // Animation des cartes
     const cards = document.querySelectorAll('.card, .project-card, .service-card, .project-preview-card');
     cards.forEach(card => {

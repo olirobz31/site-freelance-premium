@@ -58,14 +58,26 @@
         }
     }
     </script>
-    
+
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Charger le thème immédiatement pour éviter le flash
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
 </head>
 <body>
     <nav>
         <div class="menu-container">
             <div class="logo">Olivier | Dev Web</div>
-            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer de thème">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>

@@ -48,13 +48,27 @@
     }
     </script>
     
+    <script>
+        // Charger le thème AVANT le CSS pour éviter le flash
+        try {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        } catch(e) {}
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="menu-container">
             <div class="logo">Olivier | Dev Web</div>
-            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer de thème">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link active">Accueil</a></li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
