@@ -32,6 +32,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Page Blog -->
+  <url>
+    <loc>https://olivier-pons-devweb.fr/blog.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
   
   <!-- Page Contact -->
   <url>
@@ -71,6 +79,14 @@
     <lastmod>2026-01-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+
+  <!-- Articles Blog -->
+  <url>
+    <loc>https://olivier-pons-devweb.fr/blog/github-pages-domaine-personnalise.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
