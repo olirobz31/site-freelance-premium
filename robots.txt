@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Bloquer les fichiers inutiles
+Disallow: /script.js
+Disallow: /style.css
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Sitemap
+Sitemap: https://olivier-pons-devweb.fr/sitemap.xml

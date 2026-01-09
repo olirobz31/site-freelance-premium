@@ -3,48 +3,72 @@
   
   <!-- Page d'accueil -->
   <url>
-    <loc>https://olirobz31.github.io/site-freelance-premium/</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://olivier-pons-devweb.fr/</loc>
+    <lastmod>2026-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Page Portfolio -->
   <url>
-    <loc>https://olirobz31.github.io/site-freelance-premium/portfolio.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://olivier-pons-devweb.fr/portfolio.html</loc>
+    <lastmod>2026-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Page À propos -->
   <url>
-    <loc>https://olirobz31.github.io/site-freelance-premium/apropos.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://olivier-pons-devweb.fr/apropos.html</loc>
+    <lastmod>2026-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Page Services -->
   <url>
-    <loc>https://olirobz31.github.io/site-freelance-premium/services.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://olivier-pons-devweb.fr/services.html</loc>
+    <lastmod>2026-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Page Contact -->
   <url>
-    <loc>https://olirobz31.github.io/site-freelance-premium/contact.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://olivier-pons-devweb.fr/contact.html</loc>
+    <lastmod>2026-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Page Merci -->
   <url>
-    <loc>https://olirobz31.github.io/site-freelance-premium/merci.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://olivier-pons-devweb.fr/merci.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://olivier-pons-devweb.fr/mentions-legales.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Politique de confidentialité -->
+  <url>
+    <loc>https://olivier-pons-devweb.fr/politique-confidentialite.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- CGV -->
+  <url>
+    <loc>https://olivier-pons-devweb.fr/cgv.html</loc>
+    <lastmod>2026-01-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
