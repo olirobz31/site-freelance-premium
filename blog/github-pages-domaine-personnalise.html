@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Comment configurer un domaine personnalisé sur GitHub Pages | Blog Olivier Pons</title>
+    <meta name="description" content="Guide complet pour configurer votre propre nom de domaine sur GitHub Pages : DNS, HTTPS, SEO et optimisation. Tutoriel pas à pas.">
+    <meta name="keywords" content="GitHub Pages, domaine personnalisé, DNS, HTTPS, OVH, certificat SSL, SEO">
+    <meta name="author" content="Olivier - Développeur Web Freelance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://olivier-pons-devweb.fr/blog/github-pages-domaine-personnalise.html">
+    
+    <script>
+        try {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        } catch(e) {}
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <div class="logo">Olivier Pons | Dev Web</div>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer de thème">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li><a href="../portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="../apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="../services.html" class="nav-link">Services</a></li>
+                <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <article class="blog-article">
+            <div class="blog-article-header">
+                <a href="../blog.html" class="back-link">← Retour au blog</a>
+                <div class="blog-meta">
+                    <span class="blog-date">📅 9 janvier 2026</span>
+                    <span class="blog-category">SEO</span>
+                    <span class="blog-reading-time">⏱️ 8 min de lecture</span>
+                </div>
+                <h1>Comment configurer un domaine personnalisé sur GitHub Pages</h1>
+                <p class="blog-intro">GitHub Pages est une solution gratuite et performante pour héberger des sites statiques. Dans ce guide, je partage mon expérience pour passer d'un sous-domaine github.io à un nom de domaine professionnel.</p>
+            </div>
+
+            <div class="blog-content">
+                <h2>Pourquoi un domaine personnalisé ?</h2>
+                <p>Utiliser un nom de domaine comme <code>username.github.io</code> fonctionne bien pour des projets personnels, mais pour un site professionnel, un domaine personnalisé apporte plusieurs avantages :</p>
+                <ul>
+                    <li><strong>Crédibilité professionnelle</strong> : Un domaine propre inspire davantage confiance</li>
+                    <li><strong>Meilleur référencement</strong> : Google privilégie les sites avec des noms de domaine pertinents</li>
+                    <li><strong>Contrôle total</strong> : Vous pouvez changer d'hébergeur sans perdre votre adresse</li>
+                    <li><strong>Emails professionnels</strong> : Possibilité d'avoir contact@votredomaine.fr</li>
+                </ul>
+
+                <h2>Étape 1 : Acheter votre nom de domaine</h2>
+                <p>J'ai choisi <strong>OVH</strong> pour acheter mon domaine, mais vous pouvez aussi utiliser Gandi, Hostinger ou tout autre registrar. Le prix est généralement entre 8€ et 15€ par an pour un .fr.</p>
+                
+                <h3>Conseil pour choisir votre domaine</h3>
+                <p>Pour un freelance, je recommande : <code>prenom-nom-activite.fr</code> comme <code>olivier-pons-devweb.fr</code>. C'est bon pour le SEO local et les recherches par nom.</p>
+
+                <h2>Étape 2 : Configurer les DNS</h2>
+                <p>Une fois votre domaine acheté, vous devez configurer les enregistrements DNS pour pointer vers les serveurs de GitHub Pages.</p>
+                
+                <h3>Ajouter les enregistrements A</h3>
+                <p>Dans la zone DNS de votre registrar, ajoutez 4 enregistrements de type A pointant vers les adresses IP de GitHub :</p>
+                <ul>
+                    <li>185.199.108.153</li>
+                    <li>185.199.109.153</li>
+                    <li>185.199.110.153</li>
+                    <li>185.199.111.153</li>
+                </ul>
+
+                <h3>Ajouter l'enregistrement CNAME pour www</h3>
+                <p>Créez un enregistrement CNAME :</p>
+                <ul>
+                    <li><strong>Sous-domaine</strong> : www</li>
+                    <li><strong>Cible</strong> : votre-username.github.io.</li>
+                </ul>
+                <p><em>Important : N'oubliez pas le point final après .io</em></p>
+
+                <h2>Étape 3 : Configurer GitHub Pages</h2>
+                <p>Rendez-vous dans les paramètres de votre repository GitHub :</p>
+                <ol>
+                    <li>Allez dans <strong>Settings → Pages</strong></li>
+                    <li>Dans "Custom domain", entrez votre nom de domaine</li>
+                    <li>Cliquez sur <strong>Save</strong></li>
+                    <li>Attendez que GitHub vérifie la configuration DNS (quelques minutes)</li>
+                    <li>Une fois validé, cochez <strong>Enforce HTTPS</strong></li>
+                </ol>
+
+                <h2>Étape 4 : Optimisation SEO</h2>
+                <p>Ne pas oublier de mettre à jour toutes vos URLs dans votre code :</p>
+                <ul>
+                    <li>Balise <code>&lt;link rel="canonical"&gt;</code></li>
+                    <li>Open Graph URLs (<code>og:url</code>)</li>
+                    <li>Sitemap.xml</li>
+                    <li>Robots.txt</li>
+                </ul>
+
+                <h2>Propagation DNS et délais</h2>
+                <p>La propagation DNS peut prendre entre 2 et 48 heures. Soyez patient ! Vous pouvez vérifier l'état de la propagation sur <a href="https://dnschecker.org/" target="_blank" rel="noopener">dnschecker.org</a>.</p>
+
+                <h2>Conclusion</h2>
+                <p>Configurer un domaine personnalisé sur GitHub Pages est simple et gratuit (hors coût du domaine). C'est un investissement minimal pour un gain énorme en crédibilité professionnelle et en SEO.</p>
+
+                <p><strong>Coût total</strong> : ~10-15€/an<br>
+                <strong>Temps nécessaire</strong> : 30 minutes de configuration + temps de propagation<br>
+                <strong>Difficulté</strong> : Débutant/Intermédiaire</p>
+
+                <div class="blog-cta">
+                    <h3>Besoin d'aide pour votre site web ?</h3>
+                    <p>Je propose mes services de développement web et d'optimisation SEO. N'hésitez pas à me contacter !</p>
+                    <a href="../contact.html" class="cta-button">Me contacter</a>
+                </div>
+            </div>
+
+            <div class="blog-article-footer">
+                <a href="../blog.html" class="back-link">← Retour au blog</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Olivier</h4>
+                <p>Développeur Web Freelance</p>
+                <p>Création de SaaS et sites professionnels</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../portfolio.html">Portfolio</a></li>
+                    <li><a href="../apropos.html">À propos</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="../mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="../politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="../cgv.html">CGV</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📧 olirobz31@gmail.com</p>
+                <p>📱 +33 6 27 61 07 51</p>
+                <p>📍 Toulouse, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Olivier - Développeur Web Freelance - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

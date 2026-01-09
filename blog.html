@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Blog | Olivier Pons - Développeur Web Freelance</title>
+    <meta name="description" content="Articles techniques sur le développement web, les SaaS, l'IA et le freelancing par Olivier Pons, développeur web à Toulouse.">
+    <meta name="keywords" content="blog développeur web, articles techniques, SaaS, développement web Toulouse">
+    <meta name="author" content="Olivier - Développeur Web Freelance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://olivier-pons-devweb.fr/blog.html">
+    
+    <script>
+        try {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        } catch(e) {}
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <div class="logo">Olivier Pons | Dev Web</div>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer de thème">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Blog Technique</h1>
+            <p>Articles sur le développement web, les SaaS et le freelancing</p>
+        </section>
+
+        <section class="blog-container">
+            <article class="blog-card">
+                <div class="blog-card-header">
+                    <span class="blog-date">📅 Janvier 2026</span>
+                    <span class="blog-category">SEO</span>
+                </div>
+                <h2><a href="blog/github-pages-domaine-personnalise.html">Comment configurer un domaine personnalisé sur GitHub Pages</a></h2>
+                <p>Guide complet pour passer de github.io à votre propre nom de domaine, avec configuration DNS, HTTPS et optimisation SEO.</p>
+                <a href="blog/github-pages-domaine-personnalise.html" class="blog-read-more">Lire l'article →</a>
+            </article>
+
+            <!-- Futurs articles à ajouter ici -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Olivier</h4>
+                <p>Développeur Web Freelance</p>
+                <p>Création de SaaS et sites professionnels</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="cgv.html">CGV</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📧 olirobz31@gmail.com</p>
+                <p>📱 +33 6 27 61 07 51</p>
+                <p>📍 Toulouse, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Olivier - Développeur Web Freelance - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
