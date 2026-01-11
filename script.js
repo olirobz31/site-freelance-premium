@@ -140,14 +140,20 @@ document.addEventListener('keydown', function(event) {
     const scrollToTopBtn = document.getElementById('scrollToTop');
 
     if (scrollToTopBtn) {
-        // Afficher/masquer le bouton selon le scroll
-        window.addEventListener('scroll', function() {
+        // Fonction pour vérifier et mettre à jour la visibilité
+        function updateScrollButtonVisibility() {
             if (window.scrollY > 300) {
                 scrollToTopBtn.classList.add('visible');
             } else {
                 scrollToTopBtn.classList.remove('visible');
             }
-        });
+        }
+
+        // Vérifier au chargement de la page
+        updateScrollButtonVisibility();
+
+        // Afficher/masquer le bouton selon le scroll
+        window.addEventListener('scroll', updateScrollButtonVisibility);
 
         // Remonter en haut au clic
         scrollToTopBtn.addEventListener('click', function() {
