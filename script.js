@@ -108,12 +108,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
-        if (linkHref === currentPage || 
+        if (linkHref === currentPage ||
             (currentPage === '' && linkHref === 'index.html') ||
             (currentPage === 'index.html' && linkHref === 'index.html')) {
             link.classList.add('active');
         }
     });
+
+    // Bouton Retour en haut
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
 
 // Gestion du responsive pour le menu
@@ -135,32 +154,3 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// Bouton Retour en haut
-(function() {
-    const scrollToTopBtn = document.getElementById('scrollToTop');
-
-    if (scrollToTopBtn) {
-        // Fonction pour vérifier et mettre à jour la visibilité
-        function updateScrollButtonVisibility() {
-            if (window.scrollY > 300) {
-                scrollToTopBtn.classList.add('visible');
-            } else {
-                scrollToTopBtn.classList.remove('visible');
-            }
-        }
-
-        // Vérifier au chargement de la page
-        updateScrollButtonVisibility();
-
-        // Afficher/masquer le bouton selon le scroll
-        window.addEventListener('scroll', updateScrollButtonVisibility);
-
-        // Remonter en haut au clic
-        scrollToTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-})();
