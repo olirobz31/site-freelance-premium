@@ -142,7 +142,6 @@
                     <textarea id="message" name="message" required placeholder="Décrivez votre projet, vos objectifs, votre timeline et toute information utile..."></textarea>
                 </div>
 
-                <!-- ✅ NOUVEAU : Case à cocher consentement RGPD -->
                 <div class="form-group">
                     <label class="checkbox-label">
                         <input type="checkbox" name="consent" required>
@@ -166,11 +165,12 @@
                     </div>
                 </div>
                 
+                <!-- CORRECTION 1 : numéro découpé en spans pour bloquer les robots -->
                 <div class="contact-item">
                     <span class="contact-icon">📱</span>
                     <div>
                         <strong>Téléphone</strong>
-                        <p><a href="tel:+33627610751">+33 6 27 61 07 51</a></p>
+                        <p><a href="tel:+33627610751" class="phone-protected"><span>06</span><span> 27</span><span> 61</span><span> 07</span><span> 51</span></a></p>
                     </div>
                 </div>
                 
@@ -224,9 +224,10 @@
                     <h3>📧 Email Direct</h3>
                     <p>Pour une question rapide, envoyez-moi un email à <strong>contact@olivier-pons-devweb.fr</strong></p>
                 </div>
+                <!-- CORRECTION 2 : numéro découpé en spans pour bloquer les robots -->
                 <div class="alternative-item">
                     <h3>📞 Appel Direct</h3>
-                    <p>Préférez discuter de vive voix ? Appelez-moi directement au <strong>06 27 61 07 51</strong></p>
+                    <p>Préférez discuter de vive voix ? Appelez-moi directement au <strong><span>06</span><span> 27</span><span> 61</span><span> 07</span><span> 51</span></strong></p>
                 </div>
             </div>
         </section>
@@ -284,15 +285,16 @@
                     <li><a href="cgv.html">CGV</a></li>
                 </ul>
             </div>
+            <!-- CORRECTION 3 : numéro découpé en spans pour bloquer les robots -->
             <div class="footer-section">
                 <h4>Contact</h4>
                 <p>📧 contact@olivier-pons-devweb.fr</p>
-                <p>📱 +33 6 27 61 07 51</p>
+                <p>📱 <span>+33 6</span><span> 27</span><span> 61</span><span> 07</span><span> 51</span></p>
                 <p>📍 Toulouse, France</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Olivier Pons - Développeur Web Freelance - Tous droits réservés</p>
+            <p>&copy; 2026 Olivier Pons - Développeur Web Freelance - Tous droits réservés</p>
         </div>
     </footer>
 
